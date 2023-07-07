@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROP SYSTEM</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            background-color: #e3f2fd;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            width: 120px;
+        }
+
+        .form-group input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CROP RECOMMENDATION SYSTEM</h1>
+        <form action="/inputs" method="post">
+            <div class="form-group">
+                <label for="N_SOIL">N_SOIL:</label>
+                <input type="text" name="N_SOIL" id="N_SOIL" required>
+            </div>
+
+            <div class="form-group">
+                <label for="P_SOIL">P_SOIL:</label>
+                <input type="text" name="P_SOIL" id="P_SOIL" required>
+            </div>
+
+            <div class="form-group">
+                <label for="K_SOIL">K_SOIL:</label>
+                <input type="text" name="K_SOIL" id="K_SOIL" required>
+            </div>
+
+            <div class="form-group">
+                <label for="TEMPERATURE">TEMPERATURE:</label>
+                <input type="text" name="TEMPERATURE" id="TEMPERATURE" required>
+            </div>
+
+            <div class="form-group">
+                <label for="HUMIDITY">HUMIDITY:</label>
+                <input type="text" name="HUMIDITY" id="HUMIDITY" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ph">PH:</label>
+                <input type="text" name="ph" id="ph" required>
+            </div>
+
+            <div class="form-group">
+                <label for="RAINFALL">RAINFALL:</label>
+                <input type="text" name="RAINFALL" id="RAINFALL" required>
+            </div>
+
+            <div class="form-group">
+                <label for="CROP_PRICE">CROP_PRICE:</label>
+                <input type="text" name="CROP_PRICE" id="CROP_PRICE" required>
+            </div>
+
+            <input type="submit" value="Predict Crop">
+        </form>
+    </div>
+</body>
+</html>
